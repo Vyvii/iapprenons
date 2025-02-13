@@ -13,27 +13,28 @@
 		<link rel="icon" href="public/favicon.ico" type="image/x-icon"/>
 		<link rel="stylesheet" media="all" href="static/Terminal/terminal.css">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name=keywords content=iapprenons,nsi,ndbellegarde,ia>
 		<meta name=description content="Le site internet pour installer l'application d'IApprennons !">
 
+        <link rel="stylesheet" href="style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Rubik:wght@500&family=Karla:wght@500&display=swap" rel="stylesheet">
     	
 	</head>
 
-    <body>
-        
-		<!-- Les boutons -->
-		<button id="download">Télécharger l'application</button>
-
-		<!-- Tout le script qui gère le terminal -->
-		<script src="static/Terminal/terminal.js"></script>
-
-	</body>
-
-</html>
+    <body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
+        <div class="text-center p-8 bg-gray-800 shadow-lg rounded-xl max-w-lg">
+            <h1 class="text-3xl font-bold mb-4">Bienvenue sur <span class="text-blue-400">IApprenons</span></h1>
+            <p class="text-gray-400 mb-6">Téléchargez notre application dès maintenant :</p>
+            <button id="download-btn" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-md transition-all duration-300">
+                Télécharger
+            </button>
+        </div>
+    </body>
+    </html>
 
 <!-- Fin du code html de la page terminal -->
